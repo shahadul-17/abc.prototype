@@ -1,0 +1,183 @@
+.outerContainer {
+    min-width: 450px;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.form {
+    /* .....Container design..... */
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0.5px 20px dodgerblue;
+    /* .....Inner container design..... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.stepsContainer {
+    color: white;
+    overflow: hidden;
+    width: 400px;
+    height: 285px;
+    transition: width 0.5s;
+}
+
+.firstStepContainer {
+    height: 267px;
+    width: 380px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.secondStepContainer {
+    height: 267px;
+    width: 380px;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* indicates step */
+.stepIndicator {
+    padding: 15px;
+}
+
+/* steps of the form */
+.step {
+    display: inline-block;
+    margin: 0 3px;
+    padding-bottom: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #4e4e4e;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* current step */
+.currentStep {
+    opacity: 1;
+}
+
+/* completed step */
+.completedStep {
+    background-color: dodgerblue;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.columnLeft {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.columnRight {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.label {
+    font-size: 13px;
+}
+
+.textInput {
+    margin: 5px 0px 5px 0px;
+    min-height: 30px;
+    background-color: #222222;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    color: white;
+    outline: none;
+    border: 1px solid #4e4e4e;
+    -moz-appearance: textfield;
+    box-shadow: none;
+    transition: 0.5s;
+    border-color: #4e4e4e;
+}
+
+.textInput::-webkit-outer-spin-button,
+.textInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.textInput:focus {
+    box-shadow: 1px 0.5px 16px dodgerblue;
+    border-color: dodgerblue;
+}
+
+.textInput:focus:invalid {
+    box-shadow: 1px 0.5px 16px red;
+    border-color: red;
+}
+
+.imageButton {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.inputGroupContainer {
+    display: flex;
+}
+
+@media screen and (min-width: 900px) {
+    .stepsContainerLarge {
+        width: 800px;
+    }
+
+    .stepsContainer {
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .firstStepContainer {
+        display: inline-block;
+    }
+
+    .secondStepContainer {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .stepsContainer {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+/* .textArea {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 40px;
+    font: inherit;
+    font-size: 13px;
+    resize: none;
+} */

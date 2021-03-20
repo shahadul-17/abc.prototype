@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    background: #222222;
+    border-radius: 10px;
+    border: 1px solid #4e4e4e;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 13px;
+    height: 45px;
+    width: 100%;
+}
+
+.container label {
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.inputFile {
+    display: none;
+}

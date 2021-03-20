@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        definition and usage metadata:
+            + charset: character set helps browsers know which character set to use to display this page correctly
+            + viewport: setting viewport instructs the browser on how to control the page's dimensions and scaling
+            + author: author/developer of this website
+            + keywords: keywords are the words and phrases that people type into search engines
+            in order to find what they're looking for
+            + description: page description is often showed up in search results. it is recommended to keep description
+            between 50-160 characters. this recommended length may vary depending on the situation
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md. Shahadul Alam Patwary">
+    <meta name="keywords" content="prototype">
+    <meta name="description" content="Prototype for the ABC company.">
+
+    <!-- sets favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/resources/icons/icon16x16.png" />
+    <link rel="icon" type="image/png" sizes="24x24" href="%PUBLIC_URL%/resources/icons/icon24x24.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/resources/icons/icon32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="%PUBLIC_URL%/resources/icons/icon48x48.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="%PUBLIC_URL%/resources/icons/icon64x64.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="%PUBLIC_URL%/resources/icons/icon128x128.png" />
+    <link rel="icon" type="image/png" sizes="180x180" href="%PUBLIC_URL%/resources/icons/icon180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/resources/icons/icon192x192.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="%PUBLIC_URL%/resources/icons/icon256x256.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/resources/icons/icon512x512.png" />
+    <!-- apple touch icon is used by iPhones, iPods and iPads in bookmarks and home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/resources/icons/icon180x180.png" />
+    <!-- this manifest file is used while installing web applications to the homescreen of a device -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- preloading CSS to avoid blocking the page's render for improved performance -->
+    <link rel="preload" as="style" href="%PUBLIC_URL%/resources/styles/index.css" />
+    <link rel="preload" as="style" href="%PUBLIC_URL%/resources/styles/scrollbar.css" />
+    <link rel="preload" as="style" href="%PUBLIC_URL%/resources/styles/spinner.css" />
+    <!-- preloading javascript to avoid blocking the page's render for improved performance -->
+    <link rel="preload" as="script" href="%PUBLIC_URL%/resources/scripts/index.js" />
+    <!-- applying CSS using javascript -->
+    <link rel="stylesheet" media="print"
+        onload="this.onload=null; this.removeAttribute('media');"
+        href="%PUBLIC_URL%/resources/styles/index.css" />
+    <link rel="stylesheet" media="print"
+        onload="this.onload=null; this.removeAttribute('media');"
+        href="%PUBLIC_URL%/resources/styles/scrollbar.css" />
+    <link rel="stylesheet" media="print"
+        onload="this.onload=null; this.removeAttribute('media');"
+        href="%PUBLIC_URL%/resources/styles/spinner.css" />
+
+    <!-- no-javascript fallback -->
+    <noscript>
+        <!-- applies CSS when javascript is not available -->
+        <link rel="stylesheet" href="%PUBLIC_URL%/resources/styles/index.css" />
+        <link rel="stylesheet" href="%PUBLIC_URL%/resources/styles/scrollbar.css" />
+        <link rel="stylesheet" href="%PUBLIC_URL%/resources/styles/spinner.css" />
+    </noscript>
+
+    <!-- title of the page -->
+    <title>Prototype</title>
+</head>
+<body>
+    <!-- no-javascript fallback -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- contents will be dynamically rendered by react dom -->
+    <div id="root">
+        <!-- container to hold the spinner -->
+        <div id="container-d422aee5" class="container-d422aee5">
+            <!-- the spinner -->
+            <div class="spinner-bf6c4662"></div>
+        </div>
+    </div>
+
+    <!-- adding javascript file -->
+    <script type="text/javascript" src="%PUBLIC_URL%/resources/scripts/index.js" defer></script>
+</body>
+</html>

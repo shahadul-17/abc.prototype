@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;                                                          /* viewport height */
+}
+
+.heading {
+    margin: 0px;
+    padding: 0px;
+    font-size: 26px;
+}
+
+.statusCode {
+    margin: 0px;
+    padding: 0px;
+    font-size: 128px;
+}
+
+.message {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
